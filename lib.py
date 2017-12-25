@@ -7,6 +7,7 @@ def ping():
 
     #and then check the response...
     if response == 0:
-        print(hostname, 'is up!')
+        result = 1
     else:
-        print(hostname, 'is down!')
+        result = 0
+    return result
